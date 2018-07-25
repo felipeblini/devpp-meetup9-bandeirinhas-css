@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bandeirinhas</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="box"></div>
+      <div class="bandeirinhas">
+        <div class="bandeirinha b1 red"></div>
+        <div class="bandeirinha b2 blue"></div>
+        <div class="bandeirinha b3 yellow"></div>
+        <div class="bandeirinha b4 green"></div>
+      </div>
+
+      <div class="form">
+        <select name="" id="type">
+          <option value="b1">b1</option>
+          <option value="b2">b2</option>
+          <option value="b3">b3</option>
+          <option value="b4">b4</option>
+        </select>
+
+        <select name="" id="color">
+          <option value="red">red</option>
+          <option value="yellow">yellow</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+        </select>
+
+        <input type="number" name="" value="1" id="qnt">
+
+        <input type="button" onclick="addElement()" value="Criar" />
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+
+</html>

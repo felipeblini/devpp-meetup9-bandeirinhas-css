@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+body {
+  margin: 0;
+}
+
+.band1 {
+  border: solid;
+  width: 0;
+  height: 0;
+  border-width: 50px;
+  box-sizing: border-box;
+  /* border-bottom-color: red; */
+  border-bottom-color: transparent;
+  color: red;
+}
+
+.band2 {
+  border: solid;
+  width: 0;
+  height: 0;
+  border-top-width: 100px;
+  box-sizing: border-box;
+  /* border-bottom-color: red; */
+  border-top-color: red;
+  /* color: red; */
+  border-left-width: 50px;
+  border-right-width: 50px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.band4 {
+  border: solid;
+  width: 400px;
+  height: 300px;
+}
+
+.band4::after {
+  content: '';
+  display: block;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.app {
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.app .form {
+  width: 200px;
+}
+
+.app .bandeirinhas {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: goldenrod;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.app .bandeirinha {
+  border: solid;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.app .bandeirinha.b1 {
+  border-width: 100px 100px;
+  border-bottom-color: transparent;
+}
+
+.app .bandeirinha.b2 {
+  border-top-width: 200px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-width: 100px;
+  border-right-width: 100px;
+}
+
+.app .bandeirinha.b3 {
+  border-width: 100px;
+  border-radius: 0 0 50% 50%;
+}
+
+.app .bandeirinha.b4 {
+  border-top-width: 100px;
+  border-bottom: 100px transparent;
+  border-left: none;
+  border-right: none;
+}
+
+.app .bandeirinha.b4::after {
+  content: "";
+  display: block;
+  border-top: solid 100px;
+  border-left: solid 100px transparent;
+  border-right: solid 100px transparent;
+}

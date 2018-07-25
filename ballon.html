@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ballon</title>
+    <style>
+      .triangulo {
+        box-sizing: border-box;
+        width: 0;
+        height: 0;
+        border: solid;
+        border-width: 100px;
+      }
+
+      .triangulo.top {
+        color: red;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-width: 130px;
+        border-top-width: 0;
+      }
+
+      .triangulo.top::after {
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        width: 0;
+        border: solid;
+        color: goldenrod;
+        margin-left: -55px;
+        border-bottom-width: 130px;
+        border-left-width: 55px;
+        border-right-width: 55px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-width: 0;
+      }
+
+      .triangulo.bottom {
+        color: blue;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-top-width: 200px;
+        border-bottom-width: 0;
+      }
+
+      .triangulo.bottom::after {
+        box-sizing: border-box;
+        content: "";
+        display: block;
+        width: 0;
+        border: solid;
+        color: green;
+        margin-left: -55px;
+        border-top-width: 200px;
+        border-left-width: 55px;
+        border-right-width: 55px;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        margin-top: -200px;
+      }
+
+      .fire {
+        color: gold;
+        border: solid 51px;
+        border-bottom-width: 5px;
+        margin-left: 51px;
+        box-sizing: border-box;
+        width: 0;
+        border-radius: 50%;
+      }
+
+      .fire::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        width: 0;
+        border: solid;
+        color: white;
+        border-width: 40px;
+        border-left-width: 0px;
+        position: relative;
+        top: 7px;
+        border-radius: 50%;
+        box-shadow: -4px -6px 0px 3px red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Não Solte Balão!!</h1>
+    <div class="triangulo top"></div>
+    <div class="triangulo bottom"></div>
+    <div class="fire"></div>
+  </body>
+
+</html>
