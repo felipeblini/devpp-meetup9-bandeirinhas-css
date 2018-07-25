@@ -1,48 +1,11 @@
 html {
   box-sizing: border-box;
   background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
-}
-
-.band1 {
-  border: solid;
-  width: 0;
-  height: 0;
-  border-width: 50px;
-  box-sizing: border-box;
-  /* border-bottom-color: red; */
-  border-bottom-color: transparent;
-  color: red;
-}
-
-.band2 {
-  border: solid;
-  width: 0;
-  height: 0;
-  border-top-width: 100px;
-  box-sizing: border-box;
-  /* border-bottom-color: red; */
-  border-top-color: red;
-  /* color: red; */
-  border-left-width: 50px;
-  border-right-width: 50px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-}
-
-.band4 {
-  border: solid;
-  width: 400px;
-  height: 300px;
-}
-
-.band4::after {
-  content: '';
-  display: block;
 }
 
 *,

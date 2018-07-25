@@ -20,23 +20,39 @@
       </div>
 
       <div class="form">
-        <select name="" id="type">
-          <option value="b1">b1</option>
-          <option value="b2">b2</option>
-          <option value="b3">b3</option>
-          <option value="b4">b4</option>
-        </select>
+        <form>
+          <fieldset>
+            <legend>Adicionar bandeirinha</legend>
 
-        <select name="" id="color">
-          <option value="red">red</option>
-          <option value="yellow">yellow</option>
-          <option value="green">green</option>
-          <option value="blue">blue</option>
-        </select>
+            Modelo:
+            <select name="" id="type">
+              <option value="b1">b1</option>
+              <option value="b2">b2</option>
+              <option value="b3">b3</option>
+              <option value="b4">b4</option>
+            </select>
 
-        <input type="number" name="" value="1" id="qnt">
+            <br> Cor:
+            <select name="" id="color">
+              <option value="red">red</option>
+              <option value="yellow">yellow</option>
+              <option value="green">green</option>
+              <option value="blue">blue</option>
+            </select>
 
-        <input type="button" onclick="addElement()" value="Criar" />
+            <br> Quantidade:
+            <input type="number" name="" value="1" id="qnt">
+
+            <input type="button" onclick="addElement()" value="Criar" />
+          </fieldset>
+        </form>
+
+        <ul>
+          <li>
+            <a href="ballon.html">Balão</a>
+          </li>
+        </ul>
+
       </div>
     </div>
 
